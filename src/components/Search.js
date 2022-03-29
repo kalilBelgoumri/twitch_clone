@@ -10,7 +10,7 @@ function Search() {
         placeholder="input search text"
         allowClear
         onSearch={onSearch}
-        style={{ width: 355 }}
+        style={{ width: 375 }}
         className="rounded-lg"
       />
     </div>
