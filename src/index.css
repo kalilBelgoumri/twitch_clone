@@ -5,10 +5,24 @@
 /* input search */
 
 .ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
-    border-radius: 5px !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
 }
 
 .ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+        height: 3vh;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
+        height: 3vh;
+    }
 }
