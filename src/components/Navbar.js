@@ -25,19 +25,19 @@ function Navbar() {
       <div className="mx-auto">
         <Search />
       </div>
-      <div className="flex mr-5">
+      <div className="flex items-center mr-5">
         <div className=" border-none hover:border py-1 px-1 rounded-sm hover:bg-slate-200">
           <CgCrown size={20} />
         </div>
         <div className="px-3">
-          <button className="border bg-slate-100 text-black font-medium py-1.5 px-3 rounded-sm text-xs hover:bg-slate-200 ">
+          <button className="border bg-slate-100 text-black font-medium py-1.5 px-4 rounded-sm text-xs hover:bg-slate-200 ">
             Se connecter
           </button>
         </div>
         <button className="border text-white py-1.5 px-3 font-medium rounded-md text-xs bg-[#9147FF] hover:bg-purple-600 ">
           S'inscrire
         </button>
-        <div className="pl-4  hover:border py-1 rounded-sm hover:bg-slate-200">
+        <div className="ml-4 hover:rounded-sm py-1 px-1 hover:bg-slate-200">
           <RiUser3Line size={20} />
         </div>
       </div>
