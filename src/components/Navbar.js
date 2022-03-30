@@ -8,18 +8,18 @@ import { BsTwitch } from "react-icons/bs";
 
 function Navbar() {
   return (
-    <div className="flex justify-between items-center bg-white shadow-2xl h-10 cursor-pointer lg:h-12  ">
+    <div className="flex justify-between items-center absolute top-0 w-screen bg-white shadow-2xl  cursor-pointer h-12  ">
       <div className="flex items-center">
         <div className="logo ml-2 mr-5">
-          <BsTwitch className="text-[10px] lg:text-xl" color="#9147FF" />
+          <BsTwitch className="text-3xl" color="#9147FF" />
         </div>
         <div className="-ml-3 lg:ml-3">
-          <span className="text-black font-medium text-[7px] lg:text-lg hover:text-[#9147FF]">
+          <span className="text-black font-medium text-md hover:text-[#9147FF]">
             Parcourir
           </span>
         </div>
         <div className="lg:ml-10 text-sm hover:rounded-sm py-1 px-1 hover:bg-slate-200">
-          <FiMoreVertical className="text-[10px] lg:text-xl" />
+          <FiMoreVertical className="text-xl" />
         </div>
       </div>
       <div className="mx-auto ">
@@ -27,18 +27,18 @@ function Navbar() {
       </div>
       <div className="flex items-center mr-3 lg:mr-5">
         <div className="-mr-3 border-none hover:border py-1 px-1 rounded-sm hover:bg-slate-200">
-          <CgCrown className=" text-[10px] lg:text-2xl " />
+          <CgCrown className=" text-xl " />
         </div>
         <div className="px-3 flex">
-          <button className="py-0 px-3 text-[6px] lg:border bg-slate-100 text-black lg:text-[10px] font-semibold truncate font-medium lg:py-1.5 lg:px-4 rounded-md text-xs hover:bg-slate-200 ">
+          <button className=" text-[6px] lg:border bg-slate-100 text-black lg:text-[10px]  truncate font-medium py-1.5 px-4 rounded-md text-xs hover:bg-slate-200 ">
             Se connecter
           </button>
         </div>
-        <button className="py-0 px-3 text-[6px] border text-white lg:py-1.5 lg:px-3 font-medium lg:rounded-md text-xs bg-[#9147FF] hover:bg-purple-600 ">
+        <button className="text-[6px] border text-white py-1.5 px-3 font-medium rounded-md text-xs bg-[#9147FF] hover:bg-purple-600 ">
           S'inscrire
         </button>
         <div className="ml-1 hover:rounded-sm py-1 px-1 hover:bg-slate-200">
-          <RiUser3Line className=" text-[10px]  lg:text-lg " />
+          <RiUser3Line className=" text-lg " />
         </div>
       </div>
     </div>
