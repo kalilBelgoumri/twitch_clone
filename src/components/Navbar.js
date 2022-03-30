@@ -13,12 +13,12 @@ function Navbar() {
         <div className="logo ml-2 mr-5">
           <BsTwitch size={26} color="#9147FF" />
         </div>
-        <div className="flex">
+        <div className="ml-3">
           <span className="text-black font-medium text-lg hover:text-[#9147FF]">
             Parcourir
           </span>
         </div>
-        <div className="ml-12">
+        <div className="ml-10">
           <FiMoreVertical size={22} />
         </div>
       </div>
@@ -37,7 +37,7 @@ function Navbar() {
         <button className="border text-white py-1.5 px-3 font-medium rounded-md text-xs bg-[#9147FF] hover:bg-purple-600 ">
           S'inscrire
         </button>
-        <div className="ml-4 hover:rounded-sm py-1 px-1 hover:bg-slate-200">
+        <div className="ml-1 hover:rounded-sm py-1 px-1 hover:bg-slate-200">
           <RiUser3Line size={20} />
         </div>
       </div>
