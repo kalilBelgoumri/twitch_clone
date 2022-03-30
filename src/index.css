@@ -39,18 +39,21 @@
 /* Sidebar */
 
 .sidebarOpen {
-    width: 12vw;
+    max-width: 15%;
     height: 100vh;
     background-color: gray;
-    transition: ease-in-out 0.8;
 }
 
 .sidebarClose {
-    width: 5vw;
+    max-width: 5%;
     height: 100vh;
     background-color: gray;
 }
 
+.chaine1 {
+    background-color: red;
+}
+
 .chaineoff {
-    display: none;
+    background-color: blue;
 }
