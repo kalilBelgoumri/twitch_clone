@@ -5,8 +5,12 @@ import Sidebar from "./Sidebar";
 function Home() {
   return (
     <>
-      <Sidebar />
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Sidebar />
+      </main>
     </>
   );
 }

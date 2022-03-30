@@ -38,6 +38,19 @@
 
 /* Sidebar */
 
-.sidebar {
-    width: 10vw;
+.sidebarOpen {
+    width: 12vw;
+    height: 100vh;
+    background-color: gray;
+    transition: ease-in-out 0.8;
+}
+
+.sidebarClose {
+    width: 5vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+.chaineoff {
+    display: none;
 }
