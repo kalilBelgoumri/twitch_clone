@@ -1,18 +1,14 @@
-import { Input, Space } from "antd";
+import { Input, Stack, InputGroup, IconButton } from "@chakra-ui/react";
+import { SearchIcon } from "@chakra-ui/icons";
 
 function Search() {
-  const { Search } = Input;
-  const onSearch = (value) => console.log(value);
-
   return (
-    <div>
-      <Search
-        placeholder="input search text"
-        allowClear
-        onSearch={onSearch}
-        style={{ width: 400 }}
-      />
-    </div>
+    <Stack spacing={4}>
+      <InputGroup>
+        <Input type="search" placeholder="Search" />
+        <IconButton icon={<SearchIcon />} />
+      </InputGroup>
+    </Stack>
   );
 }
 

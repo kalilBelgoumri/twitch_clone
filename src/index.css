@@ -38,14 +38,16 @@
 
 /* Sidebar */
 
-.sidebarOpen {
-    max-width: 15%;
+.sidebar__open {
+    position: fixed;
+    width: 30vw;
     height: 100vh;
     background-color: gray;
 }
 
-.sidebarClose {
-    max-width: 5%;
+.sidebar__close {
+    position: fixed;
+    max-width: 12vw;
     height: 100vh;
     background-color: gray;
 }

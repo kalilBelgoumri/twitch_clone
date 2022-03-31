@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BiArrowFromRight } from "react-icons/bi";
-
 function Sidebar() {
   const [active, setActive] = useState(false);
 
@@ -10,8 +9,13 @@ function Sidebar() {
 
   return (
     <>
-      <div className={active ? "sidebarOpen" : "sidebarClose"}>
-        <div className="flex items-center fixed top-20 ml-[1vw] ">
+      {active ? (
+        <div className="bg-gray-300 w-64 fixed h-screen" />
+      ) : (
+        <div className="bg-gray-300 w-20 fixed h-screen" />
+      )}
+      {active ? (
+        <div className="flex items-center absolute mt-[10vh] ml-[1vw] ">
           <span className="font-bold ">CHAÎNES RECOMMANDÉES</span>
           <BiArrowFromRight
             className="cursor-pointer"
@@ -19,7 +23,16 @@ function Sidebar() {
             size="25px"
           />
         </div>
-      </div>
+      ) : (
+        <div className="flex items-center absolute mt-[10vh] ml-[1vw] ">
+          <span className="hidden ">CHAÎNES RECOMMANDÉES</span>
+          <BiArrowFromRight
+            className="cursor-pointer"
+            onClick={toogleClass}
+            size="25px"
+          />
+        </div>
+      )}
     </>
   );
 }

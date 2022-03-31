@@ -5,8 +5,12 @@ import Sidebar from "./Sidebar";
 function Home() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
+      <div className="overflow-hidden w-screen h-screen">
+        <Navbar />
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+      </div>
     </>
   );
 }
