@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BiArrowFromRight, BiArrowFromLeft } from "react-icons/bi";
 function Sidebar() {
   const [active, setActive] = useState(false);
@@ -6,6 +6,13 @@ function Sidebar() {
   const toogleClass = () => {
     setActive(!active);
   };
+
+  // window.width < 650
+  //   ? // <div className="bg-[#EFEFF1] w-16 fixed h-screen" />
+  //     console.log("650")
+  //   : console.log("-650");
+
+  window.screenY < 650 ? console.log("ok") : console.log("pasok");
 
   return (
     <>
