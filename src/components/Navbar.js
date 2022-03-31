@@ -14,11 +14,11 @@ function Navbar() {
             <BsTwitch className="text-3xl" color="#9147FF" />
           </div>
           <div className="-ml-3 lg:ml-3">
-            <span className="text-black font-medium text-md hover:text-[#9147FF]">
+            <span className="text-black font-bold text-lg hover:text-[#9147FF]">
               Parcourir
             </span>
           </div>
-          <div className="lg:ml-10 text-sm hover:rounded-sm py-1 px-1 hover:bg-slate-200">
+          <div className="lg:ml-8 text-sm hover:rounded-sm py-1 px-1 hover:bg-slate-200">
             <FiMoreVertical className="text-xl" />
           </div>
         </div>
@@ -30,11 +30,11 @@ function Navbar() {
             <CgCrown className=" text-xl " />
           </div>
           <div className="px-3 flex">
-            <button className=" text-[6px] lg:border bg-slate-100 text-black lg:text-[10px]  truncate font-medium py-1.5 px-4 rounded-md text-xs hover:bg-slate-200 ">
+            <button className=" text-[6px] lg:border bg-slate-100 text-black lg:text-[10px]  truncate font-bold py-1.5 px-4 rounded-md text-xs hover:bg-slate-200 ">
               Se connecter
             </button>
           </div>
-          <button className="text-[6px] border text-white py-1.5 px-3 font-medium rounded-md text-xs bg-[#9147FF] hover:bg-purple-600 ">
+          <button className="text-[6px] border text-white py-1.5 px-3 font-bold rounded-md text-xs bg-[#9147FF] hover:bg-purple-600 ">
             S'inscrire
           </button>
           <div className="ml-1 hover:rounded-sm py-1 px-1 hover:bg-slate-200">
