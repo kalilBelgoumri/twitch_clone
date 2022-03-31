@@ -25,7 +25,6 @@ function Navbar() {
             bg="gray.300"
             color="black"
             placement="bottom"
-            closeOnClick={false}
           >
             <FiMoreVertical className="text-xl" />
           </Tooltip>
