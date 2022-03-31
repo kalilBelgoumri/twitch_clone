@@ -17,11 +17,13 @@ function Sidebar() {
       {active ? (
         <div className="flex items-center absolute mt-[3vh] ml-[10px] ">
           <span className="font-bold text-xs ">CHAÎNES RECOMMANDÉES</span>
-          <BiArrowFromRight
-            className="cursor-pointer"
-            onClick={toogleClass}
-            size="21px"
-          />
+          <div className="ml-8">
+            <BiArrowFromRight
+              className="cursor-pointer"
+              onClick={toogleClass}
+              size="21px"
+            />
+          </div>
         </div>
       ) : (
         <div className="flex items-center absolute mt-[10vh] ml-[1vw] ">

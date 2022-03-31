@@ -5,8 +5,8 @@ function Search() {
   return (
     <Stack spacing={4}>
       <InputGroup>
-        <Input type="search" placeholder="Search" />
-        <IconButton icon={<SearchIcon />} />
+        <Input width="20vw" size="sm" type="search" placeholder="Search" />
+        <IconButton size="sm" icon={<SearchIcon />} />
       </InputGroup>
     </Stack>
   );
