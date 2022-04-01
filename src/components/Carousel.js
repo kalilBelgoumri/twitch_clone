@@ -1,19 +1,17 @@
 import { useState } from "react";
 import Slider from "react-slick";
+import { Box } from "@chakra-ui/react";
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const images = [
   {
-    title: "title 1",
     url: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fyc3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
-    title: "title 2",
     url: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
   },
   {
-    title: "",
     url: "https://images.unsplash.com/photo-1517672651691-24622a91b550?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80",
   },
   {
@@ -52,11 +50,16 @@ function CarouselDemo() {
   };
 
   return (
-    <div className="App">
+    <div className="Carous">
       <Slider {...settings}>
         {images.map((img, idx) => (
           <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <img src={img} alt={img} />
+            <div className="flex shadow-xl">
+              <img src={img.url} alt={img} />
+              <Box bg="tomato" w="100%" p={7} color="white">
+                test
+              </Box>
+            </div>
           </div>
         ))}
       </Slider>

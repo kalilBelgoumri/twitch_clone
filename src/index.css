@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 /*class input search */
 
@@ -61,12 +63,9 @@
     background-color: gray;
 }
 
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-.App {
-    width: 50%;
+.Carous {
+    width: 100%;
     margin: 10rem auto;
-    height: 570px;
 }
 
 .slide img {

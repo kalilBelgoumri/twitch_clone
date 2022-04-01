@@ -23,6 +23,7 @@
         "react-scripts": "5.0.0",
         "react-slick": "^0.28.1",
         "react-stacked-center-carousel": "^1.0.5",
+        "slick-carousel": "^1.8.1",
         "styled-components": "^5.3.5",
         "web-vitals": "^2.1.4"
     },
