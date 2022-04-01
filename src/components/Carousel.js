@@ -1,21 +1,22 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import { Box } from "@chakra-ui/react";
+import { AspectRatio } from "@chakra-ui/react";
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fyc3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    url: "https://www.youtube.com/embed/QhBnZ6NPOY0",
   },
   {
-    url: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    url: "https://www.youtube.com/embed/QhBnZ6NPOY0",
   },
   {
-    url: "https://images.unsplash.com/photo-1517672651691-24622a91b550?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80",
+    url: "https://www.youtube.com/embed/QhBnZ6NPOY0",
   },
   {
-    url: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    url: "https://www.youtube.com/embed/QhBnZ6NPOY0",
   },
 ];
 function CarouselDemo() {
@@ -54,8 +55,11 @@ function CarouselDemo() {
       <Slider {...settings}>
         {images.map((img, idx) => (
           <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <div className="flex shadow-xl">
-              <img src={img.url} alt={img} />
+            <div className="flex justify-center  shadow-xl">
+              {/* <img src={img.url} alt={img} /> */}
+              <AspectRatio ratio={1}>
+                <iframe title="naruto" src={img.url} allowFullScreen />
+              </AspectRatio>
               <Box bg="tomato" w="100%" p={7} color="white">
                 test
               </Box>

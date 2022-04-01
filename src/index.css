@@ -64,12 +64,12 @@
 }
 
 .Carous {
-    width: 100%;
+    width: 110%;
     margin: 10rem auto;
 }
 
-.slide img {
-    width: 20rem;
+.slide iframe {
+    width: 100%;
     margin: 0 auto;
 }
 
